@@ -1,2 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 20%;
+    }
+    .colorful {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="greeting">Hello, World!</h1>
+  <button onclick="changeColor()">Change Text Color</button>
+
+  <script>
+    function changeColor() {
+      const greeting = document.getElementById('greeting');
+      greeting.classList.toggle('colorful');
+    }
+  </script>
+</body>
 </html>
